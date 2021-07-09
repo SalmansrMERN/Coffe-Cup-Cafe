@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Common CSS End */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(97, 47, 18, 0.692), rgba(97, 47, 18, 0.692)), url("../images/bg\ coffee.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar {
+    height: 10%;
+    display: flex;
+
+}
+
+.nav-left {
+    flex-basis: 30%;
+    background: #fff;
+    position: relative;
+}
+
+.nav_icon {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.nav_icon a {
+    margin-left: 10px;
+    color: gray;
+    font-size: 14px;
+
+}
+
+.nav_icon a:hover .fas {
+    color: rgba(153, 17, 17, 0.76);
+}
+
+.nav-right {
+    flex-basis: 70%;
+    position: relative;
+
+}
+
+.nav_menu {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+.nav_menu ul {
+    float: right;
+}
+
+.nav_menu ul li {
+    float: left;
+    margin-left: 15px;
+}
+
+.nav_menu .logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.nav_menu ul li a {
+    color: #fff;
+}
+
+.content {
+    height: 90%;
+    display: flex;
+}
+
+.content-left {
+    flex-basis: 30%;
+    background: #fff;
+    position: relative;
+
+}
+
+.content_icon {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+}
+
+
+.content_icon ul li {
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    background: gray;
+    text-align: center;
+    box-shadow: 0 5px 5px gray;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.content_icon ul li:hover {
+    cursor: pointer;
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+
+}
+
+.content_icon ul li:nth-child(1):hover {
+    background: #3b5999;
+}
+
+.content_icon ul li:nth-child(3):hover {
+    background: #55acee;
+}
+
+.content_icon ul li:nth-child(2):hover {
+
+    background: #e4405f;
+}
+
+.content_icon ul li:nth-child(4):hover {
+    background: #cd201f;
+}
+
+.content_icon ul li a {
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+.content-right {
+    flex-basis: 70%;
+    position: relative;
+}
+
+.content_photo {
+    position: absolute;
+    bottom: 5%;
+    left: -35%;
+
+}
+
+.content_photo img {
+    transition: all linear 0.7s;
+    -webkit-transition: all linear 0.7s;
+    -moz-transition: all linear 0.7s;
+    -ms-transition: all linear 0.7s;
+    -o-transition: all linear 0.7s;
+
+}
+
+.content_photo img:hover {
+    transform: translate(-22px, -22px);
+    -webkit-transform: translate(-22px, -22px);
+    -moz-transform: translate(-22px, -22px);
+    -ms-transform: translate(-22px, -22px);
+    -o-transform: translate(-22px, -22px);
+}
+
+.content_text {
+
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
+.content_text h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.content_text p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.content_photo img {
+    width: 45%;
+    height: 45%;
+}
